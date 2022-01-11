@@ -32,16 +32,16 @@ const result = await request;
 export const getDb = async () => {
   console.error('get from db');
 
-const contactDb = await openDB("contact", 1);
+const contactDb = await openDB('contact', 1);
 
-const tx = contactDb.transaction("contact", "readonly");
+const tx = contactDb.transaction('contact', 'readonly');
 
-const store = tx.objectStore("contact");
+const store = tx.objectStore('contact');
 
 const request = store.getAll();
 
 const result = await request;
-  console.log("result.value", result);
+  console.log('result.value', result);
   return result;
 };
 
