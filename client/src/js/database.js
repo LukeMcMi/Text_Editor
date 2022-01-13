@@ -31,7 +31,7 @@ const result = await request;
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
-  console.error('get from db');
+  console.log('get from db');
 
 const jateDb = await openDB('jate', 1);
 
